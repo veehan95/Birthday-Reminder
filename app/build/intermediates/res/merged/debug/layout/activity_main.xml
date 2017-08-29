@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:weightSum="2"
+    >
+
+    <!--Top-->
+    <LinearLayout
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="center|bottom"
+        >
+        <!--Message-->
+        <LinearLayout
+            android:gravity="right|center"
+            android:layout_height="180sp"
+            android:layout_width="180sp"
+            android:orientation="vertical"
+            android:padding="5sp"
+            >
+            <!--Day and month-->
+            <TextView android:id="@+id/tv_dayMonth"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/dayMonth"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                />
+            <!--Year-->
+            <TextView android:id="@+id/tv_year"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/year"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                />
+            <!--Message-->
+            <TextView android:id="@+id/tv_message"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/message"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+        <!--Birthday list-->
+        <ImageButton android:id="@+id/btn_list"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:layout_height="180sp"
+            android:layout_width="180sp"
+            android:padding="5sp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/birthday"
+            />
+    </LinearLayout>
+
+    <!--Bottom-->
+    <LinearLayout
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="center|top"
+        >
+        <!--Sync to cloud-->
+        <ImageButton android:id="@+id/btn_cloud"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:layout_height="180sp"
+            android:layout_width="180sp"
+            android:padding="5sp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/cloud"
+            />
+        <ImageButton android:id="@+id/btn_add"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:layout_height="180sp"
+            android:layout_width="180sp"
+            android:padding="5sp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/add"
+            />
+    </LinearLayout>
+</LinearLayout>

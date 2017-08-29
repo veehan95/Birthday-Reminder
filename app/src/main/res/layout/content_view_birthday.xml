@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20sp"
+    android:gravity="center"
+    >
+
+    <!--Name of birthday star-->
+    <TextView android:id="@+id/input_name"
+        android:text="@string/input_name"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_width="300sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+
+    <!--Birthday-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:gravity="center|left"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_birthday"
+            android:textColor="@color/white"
+            />
+        <TextView android:id="@+id/input_birthday"
+            android:text="@string/input_birthday"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <!--Email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:gravity="center|left"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_email"
+            android:textColor="@color/white"
+            />
+        <TextView android:id="@+id/input_email"
+            android:text="@string/input_email"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <!--Note-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:gravity="center|left"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_note"
+            android:textColor="@color/white"
+            />
+        <TextView android:id="@+id/input_note"
+            android:text="@string/input_add_note"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:maxLines="5"
+            android:minLines="1"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+
+</LinearLayout>

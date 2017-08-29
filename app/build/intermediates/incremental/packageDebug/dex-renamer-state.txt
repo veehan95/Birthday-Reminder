@@ -1,0 +1,4 @@
+#Tue Aug 29 09:14:59 SGT 2017
+base.0=C\:\\Users\\User\\AndroidStudioProjects\\BirthdayReminder\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\User\\AndroidStudioProjects\\BirthdayReminder\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

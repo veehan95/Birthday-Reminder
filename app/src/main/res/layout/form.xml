@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20sp"
+    android:gravity="center"
+    >
+
+    <!--Name of birthday star-->
+    <EditText android:id="@+id/input_name"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/input_name"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_width="300sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:maxLength="26"
+        android:inputType="textCapWords"
+        />
+
+    <!--Birthday-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_birthday"
+            android:textColor="@color/white"
+            />
+        <EditText android:id="@+id/input_birthday"
+            android:backgroundTint="@android:color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/input_birthday"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            />
+    </LinearLayout>
+
+    <!--Email-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_email"
+            android:textColor="@color/white"
+            />
+        <EditText android:id="@+id/input_email"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/input_email"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:maxLength="320"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            />
+    </LinearLayout>
+
+    <!--Note-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/input_note"
+            android:textColor="@color/white"
+            />
+        <EditText android:id="@+id/input_note"
+            android:backgroundTint="@android:color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/input_add_note"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:maxLines="5"
+            android:maxLength="500"
+            android:minLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+
+</LinearLayout>

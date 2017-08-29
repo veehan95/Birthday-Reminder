@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    >
+
+    <!--title-->
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:text="@string/discard_title"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        />
+
+    <!--content-->
+    <LinearLayout
+        android:layout_height="100sp"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/discard_message"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <!--buttons-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button android:id="@+id/button_discard"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/button_discard"
+            android:textColor="@color/red"
+            />
+        <Button android:id="@+id/button_save"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/button_save"
+            />
+    </LinearLayout>
+</LinearLayout>

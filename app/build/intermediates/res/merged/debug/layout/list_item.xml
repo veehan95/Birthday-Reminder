@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/rose_gold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <!--brief info-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="95sp"
+        android:orientation="vertical"
+        android:gravity="left|center"
+        android:layout_margin="3dp"
+        android:layout_weight="0.9"
+        >
+        <!--name-->
+        <TextView android:id="@+id/tv_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_name"
+            android:textSize="20sp"
+            />
+        <!--birthday-->
+        <TextView android:id="@+id/tv_birthday"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_birthday"
+            android:textSize="15sp"
+            />
+        <!--age-->
+        <TextView android:id="@+id/tv_age"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_age"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <!--count down-->
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="95sp"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        >
+        <!--countdown days-->
+        <TextView android:id="@+id/tv_count_down"
+            android:layout_height="wrap_content"
+            android:layout_width="80sp"
+            android:text="@string/tv_count_down"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <!--on that day-->
+        <ImageView android:id="@+id/iv_count_down"
+            android:layout_height="80sp"
+            android:layout_width="80sp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+</LinearLayout>
