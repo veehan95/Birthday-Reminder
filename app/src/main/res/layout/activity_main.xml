@@ -9,7 +9,7 @@
     android:weightSum="2"
     >
 
-    <!--Tops-->
+    <!--Top-->
     <LinearLayout
         android:layout_height="0sp"
         android:layout_weight="1"
